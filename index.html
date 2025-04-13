@@ -1,40 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ribbit VPN - 100% Legit</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <div class="container">
-      <img id="logo" src="assets/ribbit_vpn.png" alt="100% Legit VPN" />
-      <h1>RIBBIT VPN</h1>
-      <p>
-        Military-grade encryption (trust us) • No logs (we promise) • Works in
-        China (maybe)
-      </p>
+        <img id="logo" src="assets/ribbit_vpn.png" alt="100% Legit VPN">
+        <h1>RIBBIT VPN</h1>
+        <p class="tagline">Military-grade encryption (trust us) • No logs (we promise) • Works in China (maybe)</p>
 
-      <input type="text" id="email" placeholder="Your finest email" />
-      <button onclick="SendDetails()">Get Free Lifetime Access*</button>
+        <input type="text" id="email" placeholder="Your finest email">
+        <button onclick="SendDetails()">Get Free Lifetime Access*</button>
 
-      <p>Or download now and pay never!</p>
-      <img src="https://cdn.discordapp.com/attachments/1335846784903286859/1361044766611083395/Screenshot_2025-04-13_at_11.55.35_PM.png?ex=67fd5337&is=67fc01b7&hm=491934030fae0099539f3442579b41af0d18dfc7a79f3c389c933f0a47fe2151&" alt="">
-      <button onclick="Download()">Download Super Legit Client</button>
+        <p>Or download now and pay never!</p>
+        <button onclick="Download()">Download Super Legit Client</button>
 
-      <p class="disclaimer">*Lifetime = approximately 3-5 business days <img src="https://cdn.discordapp.com/attachments/1335846784903286859/1361045220648816831/image.png?ex=67fd53a3&is=67fc0223&hm=bcf01b0d49e07507b8a6567af4ec6ded5888b579e8a1ff6961a707dd8fc1965c&" alt=""></p>
-            <button onclick="window.location.href='about.html'">About Us</button>
-
+        <p class="disclaimer">*Lifetime = approximately 3-5 business days</p>
+        <button onclick="window.location.href='about.html'">About Us</button>
     </div>
 
-    <div class="frog">🐸</div>
-
+    <div class="frog" onclick="document.getElementById('ribbit').play()">🐸</div>
+    <audio id="ribbit" src="assets/ribbit.mp3" preload="auto"></audio>
     <audio id="clickSound" src="assets/submit.mp3" preload="auto"></audio>
 
-    <script src="script.js">
-    </script>
-  </body>
-  <footer>
-    Our team of "ethical" hackers and "privacy" experts work 25/8 to ensure you get the illusion of security you deserve.
-  </footer>
+    <footer>
+        Our team of "ethical" hackers and "privacy" experts work 25/8 to ensure you get the illusion of security you deserve.
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>

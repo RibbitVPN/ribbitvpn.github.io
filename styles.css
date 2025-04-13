@@ -1,0 +1,253 @@
+/* Global Styles */
+body {
+  background-color: #1a3a27;
+  color: #f0f0f0;
+  font-family: "Comic Sans MS", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      rgba(46, 204, 113, 0.1) 0%,
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(46, 204, 113, 0.1) 0%,
+      transparent 20%
+    );
+}
+
+/* Header Styles */
+.header {
+  background: linear-gradient(to right, #1e7e34, #28a745);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 10;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2.8em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.header h1::before,
+.header h1::after {
+  content: "🐸";
+  margin: 0 15px;
+}
+
+/* Container Styles */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  border: 3px solid #28a745;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container::before {
+  content: "TOP SECRET";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  transform: rotate(15deg);
+  opacity: 0.8;
+}
+
+/* Logo Styles */
+#logo {
+  height: 150px;
+  width: auto;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px rgba(46, 204, 113, 0.7));
+}
+
+/* Form Elements */
+input {
+  padding: 12px 15px;
+  width: 80%;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background: linear-gradient(to bottom, #28a745, #1e7e34);
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.4);
+  margin: 10px 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(40, 167, 69, 0.6);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Typography */
+h1,
+h2 {
+  color: #28a745;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  margin: 20px 0 10px;
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+  border-bottom: 2px dashed #28a745;
+  padding-bottom: 10px;
+  margin-top: 30px;
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+.tagline {
+  font-style: italic;
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.3em;
+  color: #a3e4a3;
+}
+
+.disclaimer {
+  font-size: 0.7em;
+  opacity: 0.6;
+  margin-top: 30px;
+}
+
+/* Contributors Section */
+.contributors {
+  background: rgba(30, 126, 52, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 30px;
+  border: 1px dashed #28a745;
+}
+
+.contributors a {
+  color: #a3e4a3;
+  text-decoration: none;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 8px 15px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.contributors a:hover {
+  background: #28a745;
+  transform: scale(1.05);
+}
+
+/* Slogans Grid */
+.slogans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.slogan {
+  background: rgba(30, 126, 52, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 3px solid #28a745;
+  transition: all 0.3s ease;
+}
+
+.slogan:hover {
+  background: rgba(30, 126, 52, 0.3);
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 0.9em;
+  border-top: 1px solid #28a745;
+}
+
+/* Frog Animation */
+.frog {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 3em;
+  animation: hop 2s infinite;
+  cursor: pointer;
+  z-index: 100;
+}
+
+@keyframes hop {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
+
+/* Misc Elements */
+.sigma-badge {
+  display: inline-block;
+  background: linear-gradient(to right, #8a2be2, #4b0082);
+  color: white;
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-size: 0.8em;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.contributor-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
