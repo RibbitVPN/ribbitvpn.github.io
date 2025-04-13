@@ -1,47 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - Ribbit VPN</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="header">
-        <h1>THE SIGMA TEAM<span class="sigma-badge">GRINDSET</span></h1>
+      <h1>THE SIGMA TEAM<span class="sigma-badge">GRINDSET</span></h1>
     </div>
 
     <div class="container">
-        <p class="tagline">"We definitely don't sell your data (wink wink)"</p>
-        
-        <h2>Our Noble Mission</h2>
-        <p>We at Ribbit VPN are committed to one thing: making absolutely sure you think your data is secure while we monetize every byte of it. Our team of "ethical" hackers and "privacy" experts work 25/8 to ensure you get the illusion of security you deserve.</p>
+      <p class="tagline">"We definitely don't sell your data (wink wink)"</p>
 
-        <h2>Corporate Slogans™</h2>
-        <div class="slogans">
-            <div class="slogan">Hop into privacy with Ribbit VPN – where your data stays safe and sound</div>
-            <div class="slogan">Ribbit VPN: The leap to secure browsing, one hop at a time</div>
-            <div class="slogan">Keep your internet connection private and smooth, with Ribbit VPN</div>
-            <div class="slogan">Ribbit VPN – the easiest way to leap over digital barriers</div>
-            <div class="slogan">With Ribbit VPN, your privacy is always in the clear pond</div>
-            <div class="slogan">Ribbit VPN: Jump over restrictions, surf the web freely</div>
-        </div>
+      <h2>Our Noble Mission</h2>
+      <p>
+        We at Ribbit VPN are committed to one thing: making absolutely sure you
+        think your data is secure while we monetize every byte of it. Our team
+        of "ethical" hackers and "privacy" experts work 25/8 to ensure you get
+        the illusion of security you deserve.
+      </p>
 
-        <div class="contributors">
-            <h2>👥 Our "Contributors"</h2>
-            <p>Thanks to all these amazing people who contributed nothing to this project but we're mentioning them anyway 💚</p>
-            <a href="contributors.html">See full list of people we probably made up (nah jk we didn't)</a>
+      <h2>Corporate Slogans™</h2>
+      <div class="slogans">
+        <div class="slogan">
+          Hop into privacy with Ribbit VPN – where your data stays safe and
+          sound
         </div>
+        <div class="slogan">
+          Ribbit VPN: The leap to secure browsing, one hop at a time
+        </div>
+        <div class="slogan">
+          Keep your internet connection private and smooth, with Ribbit VPN
+        </div>
+        <div class="slogan">
+          Ribbit VPN – the easiest way to leap over digital barriers
+        </div>
+        <div class="slogan">
+          With Ribbit VPN, your privacy is always in the clear pond
+        </div>
+        <div class="slogan">
+          Ribbit VPN: Jump over restrictions, surf the web freely
+        </div>
+      </div>
+
+      <div class="contributors">
+        <h2>👥 Our "Contributors"</h2>
+        <p>
+          Thanks to all these amazing people who contributed nothing to this
+          project but we're mentioning them anyway 💚
+        </p>
+        <a href="contributors.html"
+          >See full list of people we probably made up (nah jk we didn't)</a
+        >
+      </div>
     </div>
 
-    <div class="frog" onclick="document.getElementById('ribbit').play()">🐸</div>
+    <div class="frog" onclick="toggleChat()">🐸</div>
+
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-header">
+        <span>Ribbit Support</span>
+        <span class="chat-close" onclick="toggleChat()">×</span>
+      </div>
+      <div class="chat-body" id="chatBody">
+        <div class="chat-message">Hello! How can we help you today?</div>
+        <div class="chat-message">Type "help" for assistance</div>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Type your question..." />
+        <button onclick="sendChatMessage()">Send</button>
+      </div>
+    </div>
+    >
     <audio id="ribbit" src="assets/ribbit.mp3" preload="auto"></audio>
 
     <footer>
-        Very sigma site © 2023 | Don't copy anything without Ribbit's permission (not that we'd know)
-        <br>
-        <small>Disclaimer: Ribbit VPN is 100% not a real VPN service. Or is it? *dramatic music*</small>
+      Very sigma site © 2023 | Don't copy anything without Ribbit's permission
+      (not that we'd know)
+      <br />
+      <small
+        >Disclaimer: These contributors may be fictional. Like our privacy
+        policy.</small
+      >
     </footer>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
