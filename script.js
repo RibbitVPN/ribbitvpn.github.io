@@ -1,4 +1,4 @@
 console.log("SUS");
 function SendDetails() {
-    alert("Details Sent");
+    alert("Details Sent ¯\_(ツ)_/¯");
 }
