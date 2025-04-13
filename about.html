@@ -3,26 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About Us - Ribbit VPN</title>
+    <style>
+        body {
+            background-color: #1a3a27;
+            color: #f0f0f0;
+            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(46, 204, 113, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(46, 204, 113, 0.1) 0%, transparent 20%);
+        }
+
+        .header {
+            background: linear-gradient(to right, #1e7e34, #28a745);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 10;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            color: white;
+        }
+
+        .header h1::before, .header h1::after {
+            content: "🐸";
+            margin: 0 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+            border: 3px solid #28a745;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container::before {
+            content: "TOP SECRET";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: red;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8em;
+            transform: rotate(15deg);
+            opacity: 0.8;
+        }
+
+        h1, h2 {
+            color: #28a745;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px dashed #28a745;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+
+        .tagline {
+            font-style: italic;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1.3em;
+            color: #a3e4a3;
+        }
+
+        .contributors {
+            background: rgba(30, 126, 52, 0.2);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 30px;
+            border: 1px dashed #28a745;
+        }
+
+        .contributors a {
+            color: #a3e4a3;
+            text-decoration: none;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 8px 15px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .contributors a:hover {
+            background: #28a745;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            background: rgba(0, 0, 0, 0.5);
+            font-size: 0.9em;
+            border-top: 1px solid #28a745;
+        }
+
+        .frog {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 3em;
+            animation: hop 2s infinite;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        @keyframes hop {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        .slogans {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+            margin: 30px 0;
+        }
+
+        .slogan {
+            background: rgba(30, 126, 52, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 3px solid #28a745;
+            transition: all 0.3s ease;
+        }
+
+        .slogan:hover {
+            background: rgba(30, 126, 52, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .sigma-badge {
+            display: inline-block;
+            background: linear-gradient(to right, #8a2be2, #4b0082);
+            color: white;
+            padding: 3px 10px;
+            border-radius: 50px;
+            font-size: 0.8em;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+    </style>
 </head>
 <body>
-    <h1>The sigma team behind everything</h1>
-    <p>a satirical website for a satirical vpn
-        Hop into privacy with Ribbit VPN – where your data stays safe and sound.
-        Ribbit VPN: The leap to secure browsing, one hop at a time.
-        Keep your internet connection private and smooth, with Ribbit VPN.
-        Ribbit VPN – the easiest way to leap over digital barriers.
-        With Ribbit VPN, your privacy is always in the clear pond.
-        Ribbit VPN: Jump over restrictions, surf the web freely.
-        A hop for your safety, a jump for your privacy – Ribbit VPN.
-        Your privacy, your pond – Ribbit VPN keeps it protected.
-        Leap into freedom online with Ribbit VPN – secure, private, and fast.
-        Ribbit VPN: Hop past the limits and into a world of online freedom.</p>
-    <h1>👥 Contributors</h1>
-    Thanks to all these amazing people who contributed to this project 💚  
-    <a href="https://github.com/RibbitVPN/ribbitvpn.github.io/graphs/contributors">See full list of contributors</a>
+    <div class="header">
+        <h1>THE SIGMA TEAM<span class="sigma-badge">GRINDSET</span></h1>
+    </div>
 
+    <div class="container">
+        <p class="tagline">"We definitely don't sell your data (wink wink)"</p>
+        
+        <h2>Our Noble Mission</h2>
+        <p>We at Ribbit VPN are committed to one thing: making absolutely sure you think your data is secure while we monetize every byte of it. Our team of "ethical" hackers and "privacy" experts work 25/8 to ensure you get the illusion of security you deserve.</p>
+
+        <h2>Corporate Slogans™</h2>
+        <div class="slogans">
+            <div class="slogan">Hop into privacy with Ribbit VPN – where your data stays safe and sound</div>
+            <div class="slogan">Ribbit VPN: The leap to secure browsing, one hop at a time</div>
+            <div class="slogan">Keep your internet connection private and smooth, with Ribbit VPN</div>
+            <div class="slogan">Ribbit VPN – the easiest way to leap over digital barriers</div>
+            <div class="slogan">Ribbit VPN: Jump over restrictions, surf the web freely</div>
+            <div class="slogan">Your privacy, your pond – Ribbit VPN keeps it "protected"</div>
+        </div>
+
+        <div class="contributors">
+            <h2>👥 Our "Contributors"</h2>
+            <p>Thanks to all these amazing people who contributed nothing to this project but we're mentioning them anyway 💚</p>
+            <a href="https://github.com/RibbitVPN/ribbitvpn.github.io/graphs/contributors">See full list of people we probably made up</a>
+        </div>
+    </div>
+
+    <div class="frog" onclick="document.getElementById('ribbit').play()">🐸</div>
+    <audio id="ribbit" src="https://assets.mixkit.co/sfx/preview/mixkit-frog-croaking-1719.mp3" preload="auto"></audio>
+
+    <footer>
+        Very sigma site © 2023 | Don't copy anything without Ribbit's permission (not that we'd know)
+        <br>
+        <small>Disclaimer: Ribbit VPN is 100% not a real VPN service. Or is it? *dramatic music*</small>
+    </footer>
 </body>
-<footer>Very sigma site dont copy anything without ribbit's permission</footer>
 </html>
