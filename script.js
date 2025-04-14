@@ -1,6 +1,9 @@
 const sounds = {
   click: document.getElementById("clickSound"),
   ribbit: new Audio("assets/ribbit.mp3"),
+  linux: new Audio("assets/linux.mp3"),
+  bimbows: new Audio("assets/windows.mp3"),
+  mac: new Audio("assets/macos.mp3"),
 };
 
 function SendDetails() {
@@ -21,8 +24,14 @@ function SendDetails() {
   }, 800);
 }
 
-function Download() {
-  sounds.click.play();
+function Download(number) {
+  if (number === 1) {
+    sounds.linux.play();
+  } else if (number === 2) {
+    sounds.bimbows.play();
+  } else if (number === 3) {
+    sounds.mac.play();
+  }
   setTimeout(() => {
     alert(
       "Error: Your device has been flagged by the CIA.\nPlease enter credit card details to continue."
