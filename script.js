@@ -31,7 +31,7 @@ function OS(number) {
     sounds.macos.play();
   }
   alert("Downloading");
-  location.replace("https://c.tenor.com/eLEu9TW021UAAAAd/tenor.gif");
+  location.replace("timeout.html");
 }
 
 setInterval(() => {
