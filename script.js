@@ -1,4 +1,4 @@
-const adnum = 1
+let adnum = 1
 
 const sounds = {
   ribbit: new Audio("assets/ribbit.mp3"),
