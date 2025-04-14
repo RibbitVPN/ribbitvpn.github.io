@@ -18,4 +18,4 @@ Ribbit VPN: Hop past the limits and into a world of online freedom.
 # Building app from source
 If you want the app clone the repo yourself and build it yourself I aint going to build and upload binaries for linux and bimbows too
 
-If you can't build the app, then idk.
+If you can't build the app, then its a skill issue 💀.
