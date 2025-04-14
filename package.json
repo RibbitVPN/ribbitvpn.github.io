@@ -1,0 +1,41 @@
+{
+  "name": "ribbitvpn.github.io",
+  "version": "1.0.0",
+  "description": "A very high secure app that definitely doesnt watch you when you are away",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.peenix.ribbitvpn",
+    "productName": "RibbitVPN",
+    "files": [
+      "**/*"
+    ],
+    "mac": {
+      "target": ["dmg", "zip"]
+    },
+    "win": {
+      "target": ["nsis", "zip"]
+    },
+    "linux": {
+      "target": ["deb"],
+      "category": "Utility"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RibbitVPN/ribbitvpn.github.io.git"
+  },
+  "author": "Peenix <senhasdiwan@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RibbitVPN/ribbitvpn.github.io/issues"
+  },
+  "homepage": "https://github.com/RibbitVPN/ribbitvpn.github.io#readme",
+  "devDependencies": {
+    "electron": "^35.1.5",
+    "electron-builder": "^26.0.12"
+  }
+}
