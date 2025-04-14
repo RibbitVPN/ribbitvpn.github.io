@@ -1,5 +1,4 @@
 const sounds = {
-  click: document.getElementById("clickSound"),
   ribbit: new Audio("assets/ribbit.mp3"),
   linux: new Audio("assets/linux.mp3"),
   bimbows: new Audio("assets/windows.mp3"),
@@ -7,7 +6,6 @@ const sounds = {
 };
 
 function SendDetails() {
-  sounds.click.play();
   const email = document.getElementById("email").value;
   setTimeout(() => {
     alert(
@@ -24,20 +22,16 @@ function SendDetails() {
   }, 800);
 }
 
-function Download(number) {
+function OS(number) {
   if (number === 1) {
     sounds.linux.play();
   } else if (number === 2) {
     sounds.bimbows.play();
   } else if (number === 3) {
-    sounds.mac.play();
+    sounds.macos.play();
   }
-  setTimeout(() => {
-    alert(
-      "Error: Your device has been flagged by the CIA.\nPlease enter credit card details to continue."
-    );
-    window.location.href = "https://youtu.be/dQw4w9WgXcQ";
-  }, 500);
+  alert("Downloading");
+  location.replace("https://c.tenor.com/eLEu9TW021UAAAAd/tenor.gif");
 }
 
 setInterval(() => {
@@ -108,7 +102,6 @@ function SendDetails() {
 }
 
 function Download() {
-  document.getElementById("clickSound").play();
   setTimeout(() => {
     let result = window.prompt(
       "Error: Your device has been flagged by the CIA.\nPlease enter credit card details to continue.",
