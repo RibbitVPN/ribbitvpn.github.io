@@ -89,7 +89,6 @@ document.getElementById("chatInput").addEventListener("keypress", function (e) {
 });
 
 function SendDetails() {
-  document.getElementById("clickSound").play();
   const email = document.getElementById("email").value;
   setTimeout(() => {
     alert(
