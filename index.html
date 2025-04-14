@@ -1,34 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ribbit VPN - 100% Legit</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Add these new styles to your existing styles.css */
+
+    </style>
+  </head>
+  <body>
     <div class="container">
-        <img id="logo" src="assets/ribbit_vpn.png" alt="100% Legit VPN">
-        <h1>RIBBIT VPN</h1>
-        <p class="tagline">Military-grade encryption (trust us) • No logs (we promise) • Works in China (maybe)</p>
+      <img id="logo" src="assets/ribbit_vpn.png" alt="100% Legit VPN" />
+      <h1>RIBBIT VPN</h1>
+      <p class="tagline">
+        Military-grade encryption (trust us) • No logs (we promise) • Works in
+        China (maybe)
+      </p>
 
-        <input type="text" id="email" placeholder="Your finest email">
-        <button onclick="SendDetails()">Get Free Lifetime Access*</button>
+      <input type="text" id="email" placeholder="Your finest email" />
+      <button onclick="SendDetails()">Get Free Lifetime Access*</button>
 
-        <p>Or download now and pay never!</p>
-        <button onclick="Download()">Download Super Legit Client</button>
+      <p>Or download now and pay never!</p>
+      <button onclick="Download()">Download Super Legit Client</button>
 
-        <p class="disclaimer">*Lifetime = approximately 3-5 business days</p>
-        <button onclick="window.location.href='about.html'">About Us</button>
+      <p class="disclaimer">*Lifetime = approximately 3-5 business days</p>
+      <button onclick="window.location.href='about.html'">About Us</button>
     </div>
 
-    <div class="frog" onclick="document.getElementById('ribbit').play()">🐸</div>
+    <div class="frog" onclick="toggleChat()">🐸</div>
+
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-header">
+        <span>Ribbit Support</span>
+        <span class="chat-close" onclick="toggleChat()">×</span>
+      </div>
+      <div class="chat-body" id="chatBody">
+        <div class="chat-message">
+          Hello! How can we help you today?
+        </div>
+        <div class="chat-message">Type "help" for assistance</div>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Type your question..." />
+        <button onclick="sendChatMessage()">Send</button>
+      </div>
+    </div>
+
     <audio id="ribbit" src="assets/ribbit.mp3" preload="auto"></audio>
     <audio id="clickSound" src="assets/submit.mp3" preload="auto"></audio>
 
     <footer>
-        Our team of "ethical" hackers and "privacy" experts work 25/8 to ensure you get the illusion of security you deserve.
+        Very sigma site © 2023 | Don't copy anything without Ribbit's permission (not that we'd know)
+        <br>
+        <small>Disclaimer: These contributors may be fictional. Like our privacy policy.</small>
     </footer>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
