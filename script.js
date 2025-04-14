@@ -1,3 +1,5 @@
+const adnum = 1
+
 const sounds = {
   ribbit: new Audio("assets/ribbit.mp3"),
   linux: new Audio("assets/linux.mp3"),
@@ -36,6 +38,11 @@ function OS(number) {
 
 setInterval(() => {
   sounds.ribbit.play();
+  adnum++;
+  if (adnum > 2) {
+    adnum = 1;
+  }
+  document.getElementById('advertisment').src='assets/ads/ad' + adnum + '.png';
 }, 30000);
 
 function toggleChat() {
