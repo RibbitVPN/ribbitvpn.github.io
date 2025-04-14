@@ -345,3 +345,11 @@ footer {
       display: flex;
       gap: 1rem;
     }
+
+    img {
+      transition: 0.2s;
+    }
+
+    img:hover {
+      transform: rotate3d(10, 2, 1, 20deg);
+  }
