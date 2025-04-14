@@ -225,6 +225,11 @@ footer {
   z-index: 100;
 }
 
+.advertisment {
+  border: 50px solid #28a745;
+  border-radius: 50%;
+}
+
 @keyframes hop {
   0%,
   100% {
