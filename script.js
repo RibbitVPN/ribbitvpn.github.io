@@ -2,7 +2,7 @@ const sounds = {
   click: document.getElementById("clickSound"),
   ribbit: new Audio("assets/ribbit.mp3"),
   linux: new Audio("assets/linux.mp3"),
-  windows: new Audio("assets/windows.mp3"),
+  bimbows: new Audio("assets/windows.mp3"),
   macos: new Audio("assets/macos.mp3"),
 };
 
