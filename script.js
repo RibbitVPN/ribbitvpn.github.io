@@ -1,5 +1,10 @@
 let adnum = 1
 
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  // true for mobile device
+  window.location.href = "mobile.html";
+}
+
 const sounds = {
   ribbit: new Audio("assets/ribbit.mp3"),
   linux: new Audio("assets/linux.mp3"),
