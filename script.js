@@ -1,4 +1,4 @@
-let adnum = 1
+let adnum = Math.random(1, 3)
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
   // true for mobile device
@@ -48,11 +48,6 @@ function OS(number) {
 
 setInterval(() => {
   sounds.ribbit.play();
-  adnum++;
-  if (adnum > 3) {
-    adnum = 1;
-  }
-  document.getElementById('advertisment').src='assets/ads/ad' + adnum + '.png';
 }, 30000);
 
 function toggleChat() {
@@ -130,3 +125,5 @@ function Download() {
     }
   }, 500);
 }
+
+changead(adnum);
