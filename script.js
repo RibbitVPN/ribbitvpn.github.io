@@ -30,12 +30,13 @@ function SendDetails() {
 }
 
 function OS(number) {
-  if (number === 1) {
-    sounds.linux.play();
-  } else if (number === 2) {
-    sounds.bimbows.play();
-  } else if (number === 3) {
-    sounds.macos.play();
+  switch (number) {
+    case 1:
+      sounds.linux.play();
+    case 2:
+      sounds.bimbows.play();
+    case 3:
+      sounds.macos.play();
   }
   alert("Downloading");
   location.replace("timeout.html");
