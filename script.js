@@ -8,6 +8,15 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
 function changead(num) {
   document.getElementById('advertisment').src='assets/ads/ad' + num + '.png';
   console.log("changed ad to " + num);
+  switch (num) {
+    case 1:
+      document.getElementById('advertisment').href='https://minecraft-server-list.com/server/511352/vote/';
+    case 2:
+      document.getElementById('advertisment').href='https://discord.gg/5Q7xCZGF6z';
+    case 3:
+      document.getElementById('advertisment').href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+      break;
+  }
 }
 
 const sounds = {
