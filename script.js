@@ -5,6 +5,10 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
   window.location.href = "mobile.html";
 }
 
+function changead(num) {
+  document.getElementById('advertisment').src='assets/ads/ad' + num + '.png';
+}
+
 const sounds = {
   ribbit: new Audio("assets/ribbit.mp3"),
   linux: new Audio("assets/linux.mp3"),
