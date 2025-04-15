@@ -1,4 +1,4 @@
-let adnum = Math.random(1, 3)
+let adnum = Math.random() * 3
 
 if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
   // true for mobile device
@@ -127,4 +127,4 @@ function Download() {
   }, 500);
 }
 
-changead(adnum);
+changead(Math.floor(adnum) + 1);
