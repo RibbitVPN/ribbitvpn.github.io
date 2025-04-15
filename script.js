@@ -7,6 +7,7 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigat
 
 function changead(num) {
   document.getElementById('advertisment').src='assets/ads/ad' + num + '.png';
+  console.log("changed ad to " + num);
 }
 
 const sounds = {
