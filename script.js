@@ -45,7 +45,7 @@ function OS(number) {
 setInterval(() => {
   sounds.ribbit.play();
   adnum++;
-  if (adnum > 2) {
+  if (adnum > 3) {
     adnum = 1;
   }
   document.getElementById('advertisment').src='assets/ads/ad' + adnum + '.png';
