@@ -1,22 +1,22 @@
-# RibbitVPN
-## Hop into privacy with Ribbit VPN – where your data stays safe and sound.
-Ribbit VPN: The leap to secure browsing, one hop at a time.
-Keep your internet connection private and smooth, with Ribbit VPN.
+## RibbitVPN
+### Enhance Your Privacy with Ribbit VPN: Safeguard Your Data
+Ribbit VPN: Elevate Secure Browsing, One Step at a Time
+Maintain the privacy and smoothness of your internet connection with Ribbit VPN.
 
-Ribbit VPN – the easiest way to leap over digital barriers.
-With Ribbit VPN, your privacy is always in the clear pond.
+Ribbit VPN: The Simplest Path to Overcoming Digital Barriers
+With Ribbit VPN, your privacy remains uncompromised.
 
-Ribbit VPN: Jump over restrictions, surf the web freely.
-A hop for your safety, a jump for your privacy – Ribbit VPN.
+Ribbit VPN: Transcend Restrictions, Surf the Web Freely
+Ribbit VPN ensures your safety and privacy with each step you take.
 
-Your privacy, your pond – Ribbit VPN keeps it protected.
+Your privacy, your sanctuary – Ribbit VPN safeguards it.
 
-Leap into freedom online with Ribbit VPN – secure, private, and fast.
+Embark on a journey of online freedom with Ribbit VPN: Secure, Private, and Swift.
 
-Ribbit VPN: Hop past the limits and into a world of online freedom.
+Ribbit VPN: Surpass Limitations and Enter a Realm of Unrestricted Online Freedom.
 
-# Building app from source
-If you want the app clone the repo yourself and build it yourself I aint going to build and upload binaries for linux and bimbows too
+## Building an App from Source
+If you desire to clone the repository and build the app yourself, I will not provide binaries for Linux and Bimbows.
 
-If you can't build the app, then its 💀.
-Read [Building.md](https://github.com/RibbitVPN/ribbitvpn.github.io/blob/main/Building.md) ig.
+If you are unable to build the app, it is no longer viable.
+Please refer to the Building Guide located at [Building.md](https://github.com/RibbitVPN/ribbitvpn.github.io/blob/main/Building.md).
